@@ -1,0 +1,2 @@
+- need some sort of status feedback
+- spaces in video_ts container name will crash ISOUtil
