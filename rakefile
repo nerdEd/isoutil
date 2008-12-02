@@ -1,0 +1,11 @@
+# largely based on rakefile from osx-window-sizing - thanks!
+
+require 'rubygems'
+require 'rake'
+
+desc "Compile SpawnEclipse to .app file"
+task :compile do
+  puts "Compiling ISOUtil.applescript..."
+  system "osacompile -o ./bin/ISOUtil.app ./lib/ISOUtil.applescript"
+  puts "Done!"
+end
