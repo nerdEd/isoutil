@@ -3,9 +3,15 @@
 require 'rubygems'
 require 'rake'
 
-desc "Compile SpawnEclipse to .app file"
+desc "Compile ISOUtil to .app file"
 task :compile do
   puts "Compiling ISOUtil.applescript..."
   system "osacompile -o ./bin/ISOUtil.app ./lib/ISOUtil.applescript"
-  puts "Done!"
+  puts "Compile done!"
+end
+
+desc "Install ISOUtil.app into Applications directory"
+task :install => [:compile] do
+  system "cp -r ./bin/ISOUtil.app /Applications/ISOUtil.app"
+  puts "Installation done!"
 end

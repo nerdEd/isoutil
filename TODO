@@ -1,2 +1,3 @@
 - need some sort of status feedback
+	- currently the app just provides a waiting cursor, which might confuse users
 - spaces in video_ts container name will crash ISOUtil
